@@ -1,0 +1,32 @@
+using system;
+
+class program{
+
+static void Main (string[] args){
+
+	bool isPrime = primeno(32);
+	if(isPrime){
+	Console.WriteLine("Prime No");
+	}
+	else{
+	Console.WriteLine("Not Prime No");
+
+}
+
+static bool primeno(int n){
+
+	if(n<=1)
+	{
+	return false;
+	}
+	
+	for(int i=2 ; i*i<n;i++){
+	if(n%i ==0)
+	{
+		return false;
+	}
+	}
+return true;
+}
+}
+
